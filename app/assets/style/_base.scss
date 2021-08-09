@@ -1,0 +1,32 @@
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img{
+    max-width: 100%;
+    height: auto;
+  }
+  .d-f{
+      display: flex;
+  }
+  .mt-21{
+    margin-top: 0;
+  }
+/* 全域 border box */
+  
+  *,*::before,*::after{
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15 auto;
+    line-height: 1.5;
+}
+@media (max-width:768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media (max-width:767px){
+    .container{
+        max-width: 720px;
+    }
+}

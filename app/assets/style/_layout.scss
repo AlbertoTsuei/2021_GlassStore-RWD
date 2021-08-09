@@ -1,0 +1,222 @@
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #AA0601;
+    padding: 0 56px 0 88px;
+}
+@include pc{
+    .header{
+        padding: 0 7px 0 39px;
+    }
+}
+@include mobile{
+    .header{
+        flex-direction: column;
+        padding: 0;
+    }
+}
+.logo a{
+    display: block;
+    width: 80px;
+    height: 49px;
+    margin: 30px 0 ;
+    background:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png) center center no-repeat;
+    background-size: cover;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@include mobile{
+    .logo a {
+        width: 48px;
+        height: 29px;
+        margin: 10px 0;
+    }
+}
+.menu{
+    display: flex;   
+    a{
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 39px 32px;
+    }
+    a:hover{
+        color: rgb(36, 196, 22);
+    }
+}
+@include pad{
+    .menu a{ padding: 39px 20px; }
+}
+@include mobile{
+    .menu{
+        flex-wrap: wrap;
+        li {
+        width: 50%;
+        border: #ffffff 1px solid;
+        text-align: center;
+        padding: 8px 52px;
+        }
+        a{
+            display: block;
+            padding: 0;
+        }
+    }
+}
+  
+
+/* footer */
+.footer{
+    background: #AA0601;
+    padding: 44px 0 39px 0 ;
+    &_top{
+        position: relative;
+    }
+    &_menu{
+    display: flex;
+    margin-bottom: 36px;
+    }
+    &_menu a{
+        color: #ffffff;
+        padding-right: 48px;
+    }
+    &_menu a:hover{
+        color: rgb(36, 196, 22);
+    }
+}
+@include pad{
+    .footer{
+        padding: 38px 0 32px 0;
+        &_menu{
+            margin-bottom: 18px;
+        }
+        &_menu a{ padding-right: 40px;}
+    }   
+}
+@include mobile{
+     .footer{
+        padding: 25px 0 24px 0;
+        &_menu{
+            display: none;
+        }
+    }
+}
+
+.social{
+    position: absolute;
+    right:0;
+    top:0;
+     a {
+    padding-left: 32px;
+    }
+    img{
+    height: 48px;
+    width: 48px;
+    }
+    img:hover{
+    background: rgb(36, 196, 22);
+    }
+}
+@include pad{
+    .social a { 
+        padding-left: 24px;
+    }
+   .social img{
+       height: 24px;
+       width: 24px;
+   }
+}
+
+.contact li{
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+.contact img{
+    height: 36px;
+    width: 36px;
+    margin-right: 22px;
+}
+@include pad{
+      .contact li{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .contact img{
+        height: 18px;
+        width: 18px;
+        margin-right: 11px;
+    }
+}
+@include mobile{
+    .contact li{
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .contact img{
+        height: 15px;
+        width: 15px;
+        margin-right: 6.5px;
+    }  
+}
+
+.contact a{
+    color: #ffffff;
+    &:hover{
+    color: rgb(36, 196, 22);
+    }
+}
+.line{
+    margin-top: 8px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #ffffff;
+}
+@include pad{
+    .line{
+        margin-bottom: 24px;
+    }
+}
+@include pad{
+    .line{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }  
+}
+   
+.copyright{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_content{
+    display: flex;
+    }
+    p{
+    font-size: 14px;
+    margin-left: 48px;
+    }
+    p:hover{
+    color: rgb(36, 196, 22);
+    }
+}
+@include pad{
+    .copyright p{
+       margin-left: 24px;
+   }
+}
+@include mobile{
+.copyright{
+    display: block;
+    font-size: 16px;
+    &__content{
+     display: block;
+    }
+    p {
+     margin-left: 0;
+     margin-top: 8px;
+    }
+ }   
+}
