@@ -128,20 +128,25 @@
        width: 24px;
    }
 }
-
-.contact li{
+.contact{
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #ffffff;
+    li{
     display: flex;
     align-items: center;
     font-size: 36px;
     margin-bottom: 16px;
-}
-.contact img{
+    }
+    img{
     height: 36px;
     width: 36px;
     margin-right: 22px;
+    }
 }
+
 @include pad{
-      .contact li{
+    .contact li{
         font-size: 20px;
         margin-bottom: 12px;
     }
@@ -159,7 +164,7 @@
     .contact img{
         height: 15px;
         width: 15px;
-        margin-right: 6.5px;
+        margin-right: 4px;
     }  
 }
 
@@ -169,11 +174,7 @@
     color: rgb(36, 196, 22);
     }
 }
-.line{
-    margin-top: 8px;
-    margin-bottom: 32px;
-    border-bottom: 1px solid #ffffff;
-}
+
 @include pad{
     .line{
         margin-bottom: 24px;
@@ -209,7 +210,6 @@
 }
 @include mobile{
 .copyright{
-    display: block;
     font-size: 16px;
     &__content{
      display: block;

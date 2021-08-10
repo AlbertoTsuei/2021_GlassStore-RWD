@@ -9,24 +9,30 @@ img{
   .mt-21{
     margin-top: 0;
   }
+
+  a{
+    text-decoration: none;
+  }
 /* 全域 border box */
   
   *,*::before,*::after{
     box-sizing: border-box;
   }
-  .container {
+/* */ 
+
+.container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 15 auto;
+    padding: 15px 0;
     line-height: 1.5;
 }
-@media (max-width:768px) {
-    .container{
+@include pad{
+  .container{
         max-width: 720px;
     }
 }
-@media (max-width:767px){
-    .container{
+@include mobile{
+  .container{
         max-width: 720px;
     }
 }
